@@ -5,7 +5,7 @@
 #include "BigInt.h"
 
 void testLinearListArray() {
-    std::cout << "========== 顺序表测试 ==========" << std::endl;
+    std::cout << "顺序表测试:" << std::endl;
 
     // 创建顺序表
     LinearListArray list(5);
@@ -60,11 +60,10 @@ void testLinearListArray() {
     list.clear();
     std::cout << "清空后是否为空：" << (list.isEmpty() ? "是" : "否") << std::endl;
 
-    std::cout << "\n================================\n" << std::endl;
 }
 
 void testLinearListLinked() {
-    std::cout << "========== 链表测试 ==========" << std::endl;
+    std::cout << "链表测试" << std::endl;
 
     // 创建链表
     LinearListLinked list;
@@ -119,11 +118,10 @@ void testLinearListLinked() {
     list.clear();
     std::cout << "清空后是否为空：" << (list.isEmpty() ? "是" : "否") << std::endl;
 
-    std::cout << "\n================================\n" << std::endl;
 }
 
 void testPolynomial() {
-    std::cout << "========== 多项式测试 ==========" << std::endl;
+    std::cout << "多项式测试:" << std::endl;
     
     // 创建多项式 P1(x) = 3x^4 + 2x^2 + 5
     std::cout << "\n1. 创建多项式 P1(x) = 3x^4 + 2x^2 + 5" << std::endl;
@@ -175,11 +173,10 @@ void testPolynomial() {
     p1.clear();
     std::cout << "清空后是否为空：" << (p1.isEmpty() ? "是" : "否") << std::endl;
     
-    std::cout << "\n================================\n" << std::endl;
 }
 
 void testBigInt() {
-    std::cout << "========== 长整数测试 ==========" << std::endl;
+    std::cout << "长整数测试:" << std::endl;
     
     // 创建长整数
     std::cout << "\n1. 创建长整数:" << std::endl;
@@ -243,12 +240,10 @@ void testBigInt() {
     bigSum.print();
     std::cout << std::endl;
     
-    std::cout << "\n================================\n" << std::endl;
 }
 
 int main() {
     std::cout << "线性表基本操作实现与测试" << std::endl;
-    std::cout << "========================\n" << std::endl;
 
     // 测试顺序表
     testLinearListArray();
